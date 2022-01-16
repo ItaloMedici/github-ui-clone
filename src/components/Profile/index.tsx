@@ -28,13 +28,13 @@ const Profile: React.FC = () => {
             <h2>Random Repos</h2>
             
             <div>
-              {[1, 2, 3, 4, 6].map(r => (
+              {[1, 2, 3, 4, 5, 6].map(r => (
                 <RepoCard 
                   key={r}
                   username={"italomedici"}
                   reponame={"exercicios-C.Compt-UIT"}
                   description={"Exercicios-C.Compt-UIT"}
-                  language={r % 2 === 0 ? "Java" : "Javascript"}
+                  language={r % 2 === 0 ? "Typescript" : "Javascript"}
                   stars={5}
                   forks={r}
                 />
