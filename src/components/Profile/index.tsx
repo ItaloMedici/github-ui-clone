@@ -1,16 +1,24 @@
 import React from 'react';
 
-import { Container, Main, LeftSide, RightSide, Repos } from './styles';
+import {
+  Container,
+  Main,
+  LeftSide,
+  RightSide, 
+  Repos, 
+  CalendarHeading
+} from './styles';
 
 import ProfileData from '../ProfileData';
 import RepoCard from '../RepoCard';
+import RandomCalendar from '../RandomCalendar';
 
 const Profile: React.FC = () => {
   return (
     <Container>
       <Main>
         <LeftSide>
-          <ProfileData 
+          <ProfileData
             username={"italomedici"}
             name={"Ítalo Médici"}
             avatarUrl={"https://avatars.githubusercontent.com/u/59889993?v=4"}
@@ -26,10 +34,10 @@ const Profile: React.FC = () => {
         <RightSide>
           <Repos>
             <h2>Random Repos</h2>
-            
+
             <div>
               {[1, 2, 3, 4, 5, 6].map(r => (
-                <RepoCard 
+                <RepoCard
                   key={r}
                   username={"italomedici"}
                   reponame={"exercicios-C.Compt-UIT"}
@@ -42,8 +50,13 @@ const Profile: React.FC = () => {
             </div>
 
           </Repos>
+          
+          <CalendarHeading>
+            Random Calendar (do not represent original data)
+          </CalendarHeading>
+          
+          <RandomCalendar />
         </RightSide>
-
       </Main>
     </Container>
   );

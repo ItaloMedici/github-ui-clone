@@ -58,3 +58,10 @@ export const Repos = styled.div`
     }
   }
 `;
+
+
+export const CalendarHeading = styled.span`
+  margin: 36px 0 9px;
+  font-size: 16px;
+  display: inline-flex; 
+`;
