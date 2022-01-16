@@ -54,6 +54,40 @@ export const StarIcon = styled(RiStarLine)`${iconsCSS}`;
 export const ForkIcon = styled(AiOutlineFork)`${iconsCSS}`;
 
 export const Bottom = styled.div`
+  > ul {
+    display: flex;
+    align-items: center;
 
+    > li {
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
+
+      > span {
+        margin-left: 5px;
+        font-size: 12px;
+        color: var(--gray);
+      }
+    }
+  }
+
+  .language {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    &.other {
+      background: var(--other-language); 
+    }
+
+    &.typescript {
+      background: var(--typescript); 
+    }
+
+    &.javascript {
+      background: var(--javascript); 
+    }
+  }
 `;
 
